@@ -48,7 +48,7 @@ nav > ul {
 /* hero section */
 
 #hero-container {
-    background-image: url(./assets/Hero-bg.png);
+    background-image: url("assets/Hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
