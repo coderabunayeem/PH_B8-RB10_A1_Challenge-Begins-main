@@ -1,0 +1,56 @@
+/* Azeret Mono font import */
+.azeret-mono-nayeem_style {
+  font-family: "Azeret Mono";
+}
+
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Azeret Mono";
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0D1321;
+}
+
+/* header & nav style */
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+#nav-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0D1321;
+}
+
+#resume-download-bttn{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D1321;
+    border: 2px solid #0D1321;
+    border-radius: 8px;
+    padding: 17px 24px;
+}
+
+/* hero section */
+
+#hero-container {
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
