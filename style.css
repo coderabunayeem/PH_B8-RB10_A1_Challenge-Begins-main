@@ -7,14 +7,11 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Azeret Mono";
 }
 
 ul, ol {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -27,7 +24,7 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 40px;
+  padding: 30px 40px;
 }
 
 #nav-title {
@@ -39,18 +36,86 @@ nav > ul {
 #resume-download-bttn{
     font-size: 20px;
     font-weight: 600;
-    color: #0D1321;
-    border: 2px solid #0D1321;
-    border-radius: 8px;
+    color: #3D424D;
+    border: 1px solid #3D424D;
+    border-radius: 10px;
     padding: 17px 24px;
 }
 
 /* hero section */
 
 #hero-container {
-    background-image: url("../PH_B8-RB10_A1_Challenge-Begins-main/assets/Hero-bg.png");
+    background-image: url("../PH_B8-RB10_A1_Challenge-Begins-main/assets/Group.png");
+    /* background-image: url("./assets/Hero-bg.png"); */
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
+    /* background-position: center;
+    background-attachment: fixed; */
+    background-size: 100% 100%;
+    height: 86vh;
+}
+
+#hero-img-container {
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  
+}
+
+#hero-img-container > img {
+  margin-top: 50px;
+  width: 250px;
+  height: 240px;
+  
+}
+
+#hero-text-container {
+  position: relative;
+  /* height: 100px; */
+}
+
+#hero-text-title {
+  text-align: center;
+  line-height: 68px;
+  margin-top: 60px;
+  padding: 0px 383px;
+  color: #0D1321;
+  font-size: 48px;
+  font-weight: 800;   
+}
+
+#hero-text-para {
+  text-align: center;
+  line-height: 26px;
+  opacity: 70%;
+  margin-top: 30px;
+  padding: 0px 550px;
+  color: #565A64;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hero-bttn {
+  line-height: 26px;
+  margin-top: 350px;
+  padding: 20px 30px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #0D1321;
+  border-radius: 10px;
+  border: 3px solid #a1a1a1;
+  cursor: pointer;
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#hero-bttn:hover {
+  background-color: #b3b3b3;
+  color: #654b4b;
+  border-radius: 10px;
+  border: 3px solid #5a5858;
 }
