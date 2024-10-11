@@ -4,19 +4,14 @@
 }
 
 /* CSS Reset */
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Azeret Mono";
 }
 
-ul, ol {
+ul,ol {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #0D1321;
 }
 
 /* header & nav style */
@@ -28,44 +23,52 @@ nav > ul {
 }
 
 #nav-title {
-    font-size: 28px;
-    font-weight: 800;
-    color: #0D1321;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0d1321;
 }
 
-#resume-download-bttn{
-    font-size: 20px;
-    font-weight: 600;
-    color: #3D424D;
-    border: 1px solid #3D424D;
-    border-radius: 10px;
-    padding: 17px 24px;
+#resume-download-bttn {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3d424d;
+  border: 1px solid #3d424d;
+  border-radius: 10px;
+  padding: 17px 24px;
+}
+
+#resume-download-bttn:hover {
+  color: #654b4b;
+  border-radius: 10px;
+  border: 1px solid #5a5858;
+  transition: 0.5s;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #654b4b, 0 0 30px #654b4b, 0 0 40px #654b4b, 0 0 55px #654b4b, 0 0 75px #654b4b;
 }
 
 /* hero section */
 
 #hero-container {
-    background-image: url("../PH_B8-RB10_A1_Challenge-Begins-main/assets/Group.png");
-    /* background-image: url("./assets/Hero-bg.png"); */
-    background-repeat: no-repeat;
-    /* background-position: center;
-    background-attachment: fixed; */
-    background-size: 100% 100%;
-    height: 86vh;
+  background-image: url("../PH_B8-RB10_A1_Challenge-Begins-main/assets/Group.png");
+  /* background-image: url("./assets/Hero-bg.png"); */
+  background-repeat: no-repeat;
+  /* background-position: center;
+  background-attachment: fixed; */
+  /* background-size: contain; */
+  background-size: 100% 100%;
+  height: 86vh;
 }
 
 #hero-img-container {
   width: 250px;
   height: 260px;
   margin: auto;
-  
 }
 
 #hero-img-container > img {
   margin-top: 50px;
   width: 250px;
   height: 240px;
-  
 }
 
 #hero-text-container {
@@ -78,9 +81,9 @@ nav > ul {
   line-height: 68px;
   margin-top: 60px;
   padding: 0px 383px;
-  color: #0D1321;
+  color: #0d1321;
   font-size: 48px;
-  font-weight: 800;   
+  font-weight: 800;
 }
 
 #hero-text-para {
@@ -89,7 +92,7 @@ nav > ul {
   opacity: 70%;
   margin-top: 30px;
   padding: 0px 550px;
-  color: #565A64;
+  color: #565a64;
   font-size: 16px;
   font-weight: 500;
 }
@@ -98,10 +101,10 @@ nav > ul {
   line-height: 26px;
   margin-top: 350px;
   padding: 20px 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 800;
-  background-color: #0D1321;
+  background-color: #0d1321;
   border-radius: 10px;
   border: 3px solid #a1a1a1;
   cursor: pointer;
@@ -118,4 +121,5 @@ nav > ul {
   color: #654b4b;
   border-radius: 10px;
   border: 3px solid #5a5858;
+  transition: 0.9s;
 }
