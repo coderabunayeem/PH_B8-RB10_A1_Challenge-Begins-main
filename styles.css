@@ -36,18 +36,20 @@ nav > ul {
   font-size: 20px;
   font-weight: 700;
   color: #3d424d;
+  background-color: transparent; /* Explicitly set initial background */
   border: 1px solid #3d424d;
   border-radius: 10px;
   padding: 17px 24px;
+  display: inline-block; /* Ensures transform and shadow apply correctly */
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
 #resume-download-bttn:hover {
-  color: #654b4b;
-  border-radius: 10px;
-  border: 1px solid #5a5858;
-  transition: 0.5s;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #654b4b,
-    0 0 30px #654b4b, 0 0 40px #654b4b, 0 0 55px #654b4b, 0 0 75px #654b4b;
+  background-color: #0d1321;
+  color: #ffffff;
+  border-color: #0d1321;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* hero section */
