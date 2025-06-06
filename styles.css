@@ -53,7 +53,7 @@ nav > ul {
 /* hero section */
 
 #hero-container {
-  background-image: url("../PH_B8-RB10_A1_Challenge-Begins-main/assets/Hero-bg.png");
+  background-image: url("./assets/Hero-bg.png");
   /* background-image: url("./assets/Hero-bg.png"); */
   background-repeat: no-repeat;
   /* background-position: center;
@@ -159,77 +159,67 @@ nav > ul {
   margin-top: 45px;
 }
 
-#development-img-container-1 {
+/* New Styles for Web Development Section Items */
+.web-dev-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  background-image: linear-gradient(90deg, #ffffff 70%, #f5f5f7 90%);
   border-radius: 15px;
-  padding: 40px 40px 0 40px;
-  margin: 0 50px;
+  padding: 40px;
+  margin: 0 50px 30px 50px; /* Adjusted margin to include side margins and bottom margin */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add some shadow */
 }
 
-#development-img-title > h3 {
+.web-dev-item-text {
+  flex-basis: 60%; /* Adjust as needed */
+}
+
+.web-dev-item-image {
+  flex-basis: 35%; /* Adjust as needed */
+  text-align: center; /* Center image if it's smaller than container */
+}
+
+.web-dev-item-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: round image corners */
+}
+
+#web-dev-item-2 {
+  flex-direction: row-reverse; /* Image on left, text on right */
+}
+
+.web-dev-item-text h3 {
   font-size: 24px;
-  font-weight: 600;
   font-weight: 800;
   color: #3d424d;
+  margin-bottom: 10px;
 }
 
-#development-img-title > p {
+.web-dev-item-text p {
   font-size: 16px;
   font-weight: 300;
   color: #81838c;
-  margin: 10px 350px 50px 0;
+  margin-bottom: 20px;
 }
 
-#development-img-title > a {
+.web-dev-item-text a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #545862;
   cursor: pointer;
   border: 1px solid #545862;
   border-radius: 5px;
   padding: 10px 20px;
+  display: inline-block;
 }
 
-#development-container-two {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  background-image: linear-gradient(to left, #ffffff 50%, #f5f5f7 90%);
-  border-radius: 15px;
-  padding: 40px 40px 0 40px;
-  margin: 50px 50px;
-}
-
-#development-img-title-two > h3 {
-  font-size: 24px;
-  font-weight: 600;
-  font-weight: 800;
-  color: #3d424d;
-  margin: 0 150px 10px 0;
-}
-
-#development-img-title-two > p {
-  font-size: 16px;
-  font-weight: 300;
-  color: #81838c;
-  margin-bottom: 60px;
-}
-
-#development-img-title-two > a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  color: #545862;
-  cursor: pointer;
-  border: 1px solid #545862;
-  border-radius: 5px;
-  padding: 10px 20px;
+.web-dev-item-text a:hover {
+  background-color: #545862;
+  color: #ffffff;
+  transition: 0.3s ease;
 }
 
 /* require my inspiration */
@@ -318,6 +308,127 @@ center {
   color: #545862;
   font-weight: 800;
   transition: 0.5s;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 80px 20px;
+  background-color: #f9f9f9; /* Light background for the section */
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #3d424d;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 16px; /* Adjusted from 18px */
+  font-weight: 400;
+  color: #565a64; /* Matched hero text para color */
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #3d424d;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Azeret Mono", monospace; /* Ensure font consistency */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.submit-button {
+  background-color: #0d1321;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700; /* Adjusted from 800 */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1a263a; /* Darken shade for hover */
+}
+
+/* If #hero-bttn needs specific styling as an anchor */
+#hero-bttn.hero-button-link {
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Allows padding and margin like a button */
+    /* Other styles from #hero-bttn should still apply due to the ID */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0d1321;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0; /* Added margin to prevent overlap */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center social media icons */
+  gap: 20px; /* Add space between icons */
+}
+
+.social-links li {
+  display: inline-block; /* Keep inline-block if flex not preferred, but flex is better for spacing */
+}
+
+.social-links img {
+  width: 32px; /* Adjust icon size as needed */
+  height: 32px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+  opacity: 1;
 }
 
 #target-container-two {
